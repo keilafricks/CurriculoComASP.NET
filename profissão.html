@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <style>
+        .whatsapp-link {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 1000;
+        }
+
+        .fa-whatsapp {
+            margin-top: 16px;
+        }
+
+        .instagram-link {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 100px;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 1000;
+        }
+
+        .fa-instagram {
+            margin-top: 16px;
+        }
+
+        .twitter-link {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 160px;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 1000;
+        }
+
+        .fa-twitter {
+            margin-top: 16px;
+        }
+
+        .facebook-link {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 220px;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 1000;
+        }
+
+        .fa-facebook {
+            margin-top: 16px;
+        }
+
+        .linkedin-link {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 280px;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 1000;
+        }
+
+        .fa-linkedin {
+            margin-top: 16px;
+        }
+
+        .github-link {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 340px;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 1000;
+        }
+
+        .fa-github {
+            margin-top: 16px;
+        }
+    </style>
+
+    <title> Meu Currículo </title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar navbar-inverse navbar-light bg-light">
+        <div class="container">
+            <div class="container-resposive"></div>
+            <a class="navbar-brand h1 mb-0" href="Inicial.html">Meu currículo</a>
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#Meu_currículo" aria-expanded="false">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="Meu_currículo">
+                <ul class="navbar-nav mf-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="formação.html">Minha formação academica</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="profissão.html">Minha formação profissional</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Inicial.html" data-toggle="dropdown" id="navDrop">Currículo</a>
+
+                        <div class="dropdown-menu">
+                            <a class="nav-link dropdown-item" href="formação.html">Minha formação academica</a>
+                            <br>
+                            <a class="nav-link dropdown-item" href="profissão.html">Minha formação profissional</a>
+                        </div>
+
+                    </li>
+                </ul>
+
+                <form class="form-inline" action="busca" method="post">
+                    <input class="form-control ml-4 mr-4" type="search" name="" placeholder="Procurar ... ">
+                    <button class="btn btn-default" type="submit">
+                        Buscar
+                    </button>
+                </form>
+
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="cold-md-12" align="center">
+            <br>
+            <h1 style="text-align-last: center;"> Currículo </h1>
+            <br><br><br>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md" align="right">
+                <br>
+                <h3> <p> No momento ainda não possuo experiência.</p><p> Mas sou adepta a aprender coisas novas, para assim somar junto a organização.</p><p>Ajudando no crescimento da mesma.</p> </h3>
+                <br>
+            </div>
+            <div class="col-md-4" align="center">
+                <img class="img-responsive" src="img/99.jpg" width="440" height="440" >
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+    <a class="github-link" href="https://github.com/keilafricks" target="_blank">
+        <i class="fa fa-github"></i>
+    </a>
+
+    <a class="instagram-link" href="https://www.instagram.com/keyllafricks17/" target="_blank">
+        <i class="fa fa-instagram"></i>
+    </a>
+
+    <a class="facebook-link" href="https://www.facebook.com/keylla.fricks" target="_blank">
+        <i class="fa fa-facebook"></i>
+    </a>
+
+    <a class="twitter-link" href="https://twitter.com/KeilaFricks" target="_blank">
+        <i class="fa fa-twitter"></i>
+    </a>
+
+    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=27998904708" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <a class="linkedin-link" href="https://www.linkedin.com/in/keylla-fricks-39bbb66b/" target="_blank">
+        <i class="fa fa-linkedin"></i>
+    </a>
+
+    <nav class="navbar navbar-inverse">
+    </nav>
+
+</body>
+</html>
